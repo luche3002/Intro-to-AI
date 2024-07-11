@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 figure, axes = plt.subplots(nrows = 4, ncols = 6, figsize = (6, 4))
 for item in zip (axes.ravel(), digits.images, digits.target):
     axes, images, target = item
-    axes.imshow (image, cmap = plt.cm.gray_r)
+    axes.imshow (images, cmap = plt.cm.gray_r)
     axes.set_xticks([])
     axes.set_yticks([])
     axes.set_title(target)
